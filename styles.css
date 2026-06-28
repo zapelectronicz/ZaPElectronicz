@@ -157,7 +157,7 @@ body::before {
         opacity: 1;
     }
     100% {
-        opacity: 0;
+        // opacity: 0;
         visibility: hidden;
     }
 }
@@ -201,7 +201,7 @@ body::before {
     }
     100% {
         transform: translateY(-100vh) translateX(100px) scale(0);
-        opacity: 0;
+        // opacity: 0;
     }
 }
 
@@ -480,7 +480,7 @@ body::before {
 
 @keyframes slideInWord {
     0% {
-        opacity: 0;
+        // opacity: 0;
         transform: translateY(30px);
     }
     100% {
@@ -510,7 +510,7 @@ body::before {
 
 @keyframes fadeInUp {
     0% {
-        opacity: 0;
+        // opacity: 0;
         transform: translateY(20px);
     }
     100% {
