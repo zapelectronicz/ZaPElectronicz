@@ -410,7 +410,6 @@ function initializeScrollAnimations() {
 
     document.querySelectorAll('section').forEach(section => {
         if (section.id === 'home') return;
-        section.style.opacity = '0';
         observer.observe(section);
     });
 }
