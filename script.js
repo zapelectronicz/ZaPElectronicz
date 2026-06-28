@@ -398,7 +398,7 @@ function setCustomCursor() {
 /* ============================================
    SCROLL ANIMATIONS
    ============================================ */
-function initializeScrollAnimations() {
+// function initializeScrollAnimations() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
