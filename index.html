@@ -1,1 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZaP Electronicz - Premium Electronics Repair & Customization</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- CRT Power-On Animation -->
+    <div class="crt-power-on"></div>
 
+    <!-- Page Loading Animation -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="pixel-loader"></div>
+            <p>INITIALIZING SYSTEM...</p>
+        </div>
+    </div>
+
+    <!-- Floating Particles Background -->
+    <div class="particles-container" id="particlesContainer"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-section">
+                <div class="logo-text">⚡ ZaP</div>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#mods" class="nav-link">Mods</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#mentoring" class="nav-link">Mentoring</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-controls">
+                <button class="music-toggle" id="musicToggle" title="Toggle Synthwave Music">♪</button>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+            </div>
+        </div>
+        <div class="nav-underline"></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="synthwave-sunset"></div>
+            <div class="grid-floor"></div>
+            <div class="stars-container" id="starsContainer"></div>
+            <svg class="hero-pattern" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                    <linearGradient id="cityGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#1a0033;stop-opacity:0" />
+                        <stop offset="100%" style="stop-color:#000;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <polygon points="0,600 200,300 250,300 300,250 350,300 400,300 450,250 500,300 550,300 600,250 650,300 700,300 750,250 800,300 850,300 900,250 950,300 1000,300 1050,350 1100,300 1200,400 1200,600" fill="url(#cityGradient)" opacity="0.6"/>
+            </svg>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-word">Repair.</span>
+                <span class="title-word">Mod.</span>
+                <span class="title-word">Restore.</span>
+            </h1>
+            <p class="hero-subtitle">Bringing Broken Tech Back To Life</p>
+            <p class="hero-description">
+                ZaP Electronicz is a sibling-owned electronics repair and customization business founded by Zyra and Pearse. 
+                We specialize in controller repair, console restoration, electronics cleaning, custom modifications, and electronics mentoring.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" data-sound="click">Get a Quote</button>
+                <button class="btn btn-secondary" data-sound="click">View Our Work</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-container">
+            <h2 class="section-title">Powered by Siblings</h2>
+            <div class="about-grid">
+                <div class="about-card glow-card">
+                    <h3>Our Story</h3>
+                    <p>
+                        Zyra and Pearse started their electronics repair journey with a simple passion: bringing broken devices back to life. 
+                        What began as a hobby quickly grew into a thriving business built on trust, expertise, and genuine care for every device that comes through our doors.
+                    </p>
+                </div>
+                <div class="about-card glow-card">
+                    <h3>Our Passion</h3>
+                    <p>
+                        We're driven by gaming, technology, learning, and creativity. Every repair is an opportunity to solve a puzzle. 
+                        Every modification is a chance to enhance what someone loves. Every mentoring session is a moment to inspire the next generation of tech enthusiasts.
+                    </p>
+                </div>
+                <div class="about-card glow-card">
+                    <h3>Our Mission</h3>
+                    <p>
+                        We believe in giving electronics a second life. Whether it's saving a cherished console, fixing a favorite controller, or teaching someone the art of repair, 
+                        we're committed to making technology accessible, repairable, and fun.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <!-- Service Cards -->
+                <div class="service-card glow-card" data-sound="hover">
+                    <div class="service-icon">🎮</div>
+                    <h3>Controller Repair</h3>
+                    <p>Stick drift, button replacement, charging port repair, and more</p>
+                </div>
+                <div class="service-card glow-card" data-sound="hover">
+                    <div class="service-icon">🕹️</div>
+                    <h3>Console Repair</h3>
+                    <p>HDMI repair, battery replacement, screen fixes, and diagnostics</p>
+                </div>
+                <div class="service-card glow-card" data-sound="hover">
+                    <div class="service-icon">✨</div>
+                    <h3>Electronics Cleaning</h3>
+                    <p>Deep cleaning, thermal paste replacement, dust removal</p>
+                </div>
+                <div class="service-card glow-card" data-sound="hover">
+                    <div class="service-icon">⚙️</div>
+                    <h3>PC Upgrades</h3>
+                    <p>Storage upgrades, cooling mods, troubleshooting</p>
+                </div>
+                <div class="service-card glow-card" data-sound="hover">
+                    <div class="service-icon">🌈</div>
+                    <h3>Custom Mods</h3>
+                    <p>RGB lighting, Hall Effect sticks, custom paint, hydro dip</p>
+                </div>
+                <div class="service-card glow-card" data-sound="hover">
+                    <div class="service-icon">👨‍🏫</div>
+                    <h3>Mentoring</h3>
+                    <p>Learn soldering, controller repair, console restoration</p>
+                </div>
+                <div class="service-card glow-card" data-sound="hover">
+                    <div class="service-icon">📮</div>
+                    <h3>Mail-In Repairs</h3>
+                    <p>Convenient remote repair service with tracking</p>
+                </div>
+                <div class="service-card glow-card" data-sound="hover">
+                    <div class="service-icon">🔍</div>
+                    <h3>Diagnostics</h3>
+                    <p>Professional device analysis and problem identification</p>
+                </div>
+            </div>
+
+            <!-- Detailed Services -->
+            <div class="services-details">
+                <h3 class="subsection-title">Repair Services</h3>
+                <div class="service-tags">
+                    <span class="tag">Stick Drift Repair</span>
+                    <span class="tag">Hall Effect Upgrades</span>
+                    <span class="tag">Button Replacement</span>
+                    <span class="tag">Joystick Replacement</span>
+                    <span class="tag">Charging Port Repair</span>
+                    <span class="tag">HDMI Repair</span>
+                    <span class="tag">Battery Replacement</span>
+                    <span class="tag">Screen Replacement</span>
+                    <span class="tag">Laptop Repair</span>
+                    <span class="tag">Phone Repair</span>
+                    <span class="tag">PC Troubleshooting</span>
+                    <span class="tag">Handheld Repair</span>
+                    <span class="tag">Retro Console Repair</span>
+                    <span class="tag">Console Diagnostics</span>
+                </div>
+
+                <h3 class="subsection-title">Cleaning Services</h3>
+                <div class="service-tags">
+                    <span class="tag">Deep Cleaning</span>
+                    <span class="tag">Thermal Paste Replacement</span>
+                    <span class="tag">Dust Removal</span>
+                    <span class="tag">Controller Cleaning</span>
+                    <span class="tag">Console Cleaning</span>
+                    <span class="tag">PC Cleaning</span>
+                    <span class="tag">Laptop Cleaning</span>
+                    <span class="tag">Keyboard Cleaning</span>
+                    <span class="tag">Fan Cleaning</span>
+                    <span class="tag">Cable Management</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mods Section -->
+    <section id="mods" class="mods">
+        <div class="section-container">
+            <h2 class="section-title">Custom Mods & Builds</h2>
+            <p class="section-subtitle">Transform your devices with cutting-edge modifications</p>
+            
+            <div class="mods-showcase">
+                <div class="mod-item glow-card">
+                    <div class="mod-icon">⚡</div>
+                    <h3>Hall Effect Sticks</h3>
+                    <p>Stick drift-proof joysticks with analog precision</p>
+                </div>
+                <div class="mod-item glow-card">
+                    <div class="mod-icon">🌈</div>
+                    <h3>RGB Lighting</h3>
+                    <p>Custom LED lighting with programmable effects</p>
+                </div>
+                <div class="mod-item glow-card">
+                    <div class="mod-icon">🖱️</div>
+                    <h3>Mouse Click Triggers</h3>
+                    <p>Enhanced controller triggers for competitive gaming</p>
+                </div>
+                <div class="mod-item glow-card">
+                    <div class="mod-icon">🔮</div>
+                    <h3>Transparent Shells</h3>
+                    <p>Clear custom shells with internal LED showcases</p>
+                </div>
+                <div class="mod-item glow-card">
+                    <div class="mod-icon">🎨</div>
+                    <h3>Custom Paint</h3>
+                    <p>Professional custom paint jobs with unique designs</p>
+                </div>
+                <div class="mod-item glow-card">
+                    <div class="mod-icon">💧</div>
+                    <h3>Hydro Dip</h3>
+                    <p>Water transfer printing for hydro-dipped finishes</p>
+                </div>
+                <div class="mod-item glow-card">
+                    <div class="mod-icon">🎮</div>
+                    <h3>Game Boy IPS Mods</h3>
+                    <p>Upgraded IPS screens for classic handhelds</p>
+                </div>
+                <div class="mod-item glow-card">
+                    <div class="mod-icon">🔄</div>
+                    <h3>Nintendo Switch Mods</h3>
+                    <p>Enhanced performance and customization mods</p>
+                </div>
+                <div class="mod-item glow-card">
+                    <div class="mod-icon">🎯</div>
+                    <h3>Steam Deck Mods</h3>
+                    <p>Performance and aesthetic upgrades for Steam Deck</p>
+                </div>
+                <div class="mod-item glow-card">
+                    <div class="mod-icon">👾</div>
+                    <h3>Retro Console Mods</h3>
+                    <p>Upgrades for classic NES, SNES, Genesis, and more</p>
+                </div>
+                <div class="mod-item glow-card">
+                    <div class="mod-icon">💾</div>
+                    <h3>Storage Upgrades</h3>
+                    <p>Expanded storage and faster SSDs</p>
+                </div>
+                <div class="mod-item glow-card">
+                    <div class="mod-icon">❄️</div>
+                    <h3>Cooling Mods</h3>
+                    <p>Enhanced cooling systems for better performance</p>
+                </div>
+                <div class="mod-item glow-card">
+                    <div class="mod-icon">💡</div>
+                    <h3>LED Mods</h3>
+                    <p>Strategic LED placement for stunning visuals</p>
+                </div>
+                <div class="mod-item glow-card">
+                    <div class="mod-icon">🏆</div>
+                    <h3>Custom Controller Builds</h3>
+                    <p>Complete custom controller builds from scratch</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="section-container">
+            <h2 class="section-title">Our Work</h2>
+            
+            <div class="gallery-grid">
+                <!-- Placeholder Gallery Items -->
+                <div class="gallery-item glow-card" data-category="builds">
+                    <div class="gallery-placeholder">
+                        <span>🎮</span>
+                        <p>Controller Build</p>
+                    </div>
+                </div>
+                <div class="gallery-item glow-card" data-category="restoration">
+                    <div class="gallery-placeholder">
+                        <span>🕹️</span>
+                        <p>Console Restoration</p>
+                    </div>
+                </div>
+                <div class="gallery-item glow-card" data-category="mods">
+                    <div class="gallery-placeholder">
+                        <span>🌈</span>
+                        <p>RGB Mod</p>
+                    </div>
+                </div>
+                <div class="gallery-item glow-card" data-category="cleaning">
+                    <div class="gallery-placeholder">
+                        <span>✨</span>
+                        <p>Before & After</p>
+                    </div>
+                </div>
+                <div class="gallery-item glow-card" data-category="builds">
+                    <div class="gallery-placeholder">
+                        <span>🎯</span>
+                        <p>Custom Build</p>
+                    </div>
+                </div>
+                <div class="gallery-item glow-card" data-category="mods">
+                    <div class="gallery-placeholder">
+                        <span>⚡</span>
+                        <p>Hall Effect Mod</p>
+                    </div>
+                </div>
+                <div class="gallery-item glow-card" data-category="restoration">
+                    <div class="gallery-placeholder">
+                        <span>👾</span>
+                        <p>Retro Console</p>
+                    </div>
+                </div>
+                <div class="gallery-item glow-card" data-category="cleaning">
+                    <div class="gallery-placeholder">
+                        <span>🔄</span>
+                        <p>Deep Clean</p>
+                    </div>
+                </div>
+                <div class="gallery-item glow-card" data-category="builds">
+                    <div class="gallery-placeholder">
+                        <span>🎨</span>
+                        <p>Custom Paint</p>
+                    </div>
+                </div>
+                <div class="gallery-item glow-card" data-category="mods">
+                    <div class="gallery-placeholder">
+                        <span>💡</span>
+                        <p>LED Showcase</p>
+                    </div>
+                </div>
+                <div class="gallery-item glow-card" data-category="restoration">
+                    <div class="gallery-placeholder">
+                        <span>🔧</span>
+                        <p>Full Restoration</p>
+                    </div>
+                </div>
+                <div class="gallery-item glow-card" data-category="builds">
+                    <div class="gallery-placeholder">
+                        <span>🏆</span>
+                        <p>Showcase Build</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mentoring Section -->
+    <section id="mentoring" class="mentoring">
+        <div class="section-container">
+            <h2 class="section-title">Mentoring & Learning</h2>
+            <p class="section-subtitle">Learn from the pros. Master the craft.</p>
+            
+            <div class="mentoring-grid">
+                <div class="mentoring-card glow-card">
+                    <h3>📚 Electronics Basics</h3>
+                    <p>Learn the fundamentals of electronics, circuits, and components</p>
+                </div>
+                <div class="mentoring-card glow-card">
+                    <h3>🔥 Beginner Soldering</h3>
+                    <p>Master soldering techniques with hands-on guidance</p>
+                </div>
+                <div class="mentoring-card glow-card">
+                    <h3>🎮 Controller Repair</h3>
+                    <p>Learn to diagnose and repair gaming controllers</p>
+                </div>
+                <div class="mentoring-card glow-card">
+                    <h3>💬 Discord Sessions</h3>
+                    <p>Join live Discord sessions for real-time Q&A and support</p>
+                </div>
+                <div class="mentoring-card glow-card">
+                    <h3>📹 Zoom Mentoring</h3>
+                    <p>One-on-one Zoom sessions for personalized learning</p>
+                </div>
+                <div class="mentoring-card glow-card">
+                    <h3>👥 One-on-One Coaching</h3>
+                    <p>Individual coaching tailored to your skill level</p>
+                </div>
+                <div class="mentoring-card glow-card">
+                    <h3>🔍 Learning Diagnostics</h3>
+                    <p>Learn diagnostic techniques to identify device issues</p>
+                </div>
+                <div class="mentoring-card glow-card">
+                    <h3>🌈 Modding Mastery</h3>
+                    <p>Discover how to create and design custom modifications</p>
+                </div>
+                <div class="mentoring-card glow-card">
+                    <h3>🕹️ Console Restoration</h3>
+                    <p>Learn advanced console restoration and repair techniques</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="section-container">
+            <h2 class="section-title">Starting Prices</h2>
+            <p class="section-subtitle">Competitive rates. Transparent pricing. <span class="highlight">Contact us for exact quotes.</span></p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card glow-card">
+                    <h3>Controller Cleaning</h3>
+                    <p class="price">Starting at $25</p>
+                    <p class="description">Professional deep clean and maintenance</p>
+                </div>
+                <div class="pricing-card glow-card">
+                    <h3>Stick Drift Repair</h3>
+                    <p class="price">Starting at $45</p>
+                    <p class="description">Repair or upgrade with Hall Effect</p>
+                </div>
+                <div class="pricing-card glow-card">
+                    <h3>Console Cleaning</h3>
+                    <p class="price">Starting at $50</p>
+                    <p class="description">Full console deep clean</p>
+                </div>
+                <div class="pricing-card glow-card">
+                    <h3>Custom Mods</h3>
+                    <p class="price">Starting at $75</p>
+                    <p class="description">Custom modifications and enhancements</p>
+                </div>
+                <div class="pricing-card glow-card">
+                    <h3>Mentoring Sessions</h3>
+                    <p class="price">Starting at $30/hr</p>
+                    <p class="description">One-on-one or group learning</p>
+                </div>
+                <div class="pricing-card glow-card">
+                    <h3>Full Restoration</h3>
+                    <p class="price">Starting at $150</p>
+                    <p class="description">Complete device restoration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="section-container">
+            <h2 class="section-title">FAQ</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-item glow-card">
+                    <h3 class="faq-question">How long do repairs take?</h3>
+                    <p class="faq-answer">
+                        Most repairs take 2-5 business days depending on the complexity. We'll give you an accurate estimate when you contact us. 
+                        Urgent repairs may be available with expedited fees.
+                    </p>
+                </div>
+                <div class="faq-item glow-card">
+                    <h3 class="faq-question">Do you accept mail-in repairs?</h3>
+                    <p class="faq-answer">
+                        Yes! We offer convenient mail-in repair services. Simply package your device securely, include a detailed description of the issue, 
+                        and we'll handle the rest. You can track your repair throughout the process.
+                    </p>
+                </div>
+                <div class="faq-item glow-card">
+                    <h3 class="faq-question">Do you repair all consoles?</h3>
+                    <p class="faq-answer">
+                        We repair most modern and retro consoles including Nintendo, PlayStation, Xbox, and Sega systems. 
+                        Some rare or damaged systems may be outside our scope. Contact us to discuss your specific device.
+                    </p>
+                </div>
+                <div class="faq-item glow-card">
+                    <h3 class="faq-question">Can I learn from you?</h3>
+                    <p class="faq-answer">
+                        Absolutely! We offer mentoring sessions for all skill levels. From electronics basics to advanced repair techniques, 
+                        we can tailor a learning program that fits your goals and experience level.
+                    </p>
+                </div>
+                <div class="faq-item glow-card">
+                    <h3 class="faq-question">How do I request a quote?</h3>
+                    <p class="faq-answer">
+                        Simply use our contact form below or reach out via email, Instagram, or TikTok with details about your device and issue. 
+                        We'll respond within 24 hours with a quote and timeline.
+                    </p>
+                </div>
+                <div class="faq-item glow-card">
+                    <h3 class="faq-question">Do repairs include a warranty?</h3>
+                    <p class="faq-answer">
+                        Yes! All repairs come with a 30-day warranty on parts and labor. Extended warranties are available for additional protection 
+                        and peace of mind.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <h2 class="section-title">Get In Touch</h2>
+            
+            <div class="contact-wrapper">
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Device Type (e.g., Nintendo Switch)">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Describe your device issue..." rows="4" required></textarea>
+                        </div>
+                        <div class="form-buttons">
+                            <button type="submit" class="btn btn-primary" data-sound="click">Request Repair</button>
+                            <button type="button" class="btn btn-secondary" data-sound="click">Book Mentoring</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-detail">
+                        <h4>📧 Email</h4>
+                        <p><a href="mailto:ZAPElecronicz@gmail.com">ZAPElecronicz@gmail.com</a></p>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <h4>📱 Follow Us</h4>
+                        <div class="social-links">
+                            <a href="https://instagram.com/ZaPElectronicz" target="_blank" rel="noopener noreferrer">
+                                Instagram: @ZaPElectronicz
+                            </a>
+                            <a href="https://tiktok.com/@ZaPElectronicz" target="_blank" rel="noopener noreferrer">
+                                TikTok: @ZaPElectronicz
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <h4>🏢 Business Name</h4>
+                        <p>ZaP Electronicz</p>
+                    </div>
+
+                    <div class="contact-detail">
+                        <h4>ℹ️ Response Time</h4>
+                        <p>We respond to all inquiries within 24 hours</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://instagram.com/ZaPElectronicz" target="_blank">Instagram</a></li>
+                    <li><a href="https://tiktok.com/@ZaPElectronicz" target="_blank">TikTok</a></li>
+                    <li><a href="mailto:ZAPElecronicz@gmail.com">Email</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">Repair</a></li>
+                    <li><a href="#mods">Custom Mods</a></li>
+                    <li><a href="#mentoring">Mentoring</a></li>
+                    <li><a href="#contact">Book Now</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 ZaP Electronicz. All rights reserved.</p>
+            <div class="pixel-lightning" id="pixelLightning"></div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
