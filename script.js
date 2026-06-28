@@ -472,7 +472,7 @@ style.textContent = `
     @keyframes slideIn {
         from {
             transform: translateX(400px);
-            opacity: 0;
+            // opacity: 0;
         }
         to {
             transform: translateX(0);
@@ -487,13 +487,13 @@ style.textContent = `
         }
         to {
             transform: translateX(400px);
-            opacity: 0;
+            // opacity: 0;
         }
     }
 
     @keyframes fadeInUp {
         from {
-            opacity: 0;
+            // opacity: 0;
             transform: translateY(20px);
         }
         to {
