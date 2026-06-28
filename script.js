@@ -398,9 +398,7 @@ function setCustomCursor() {
 /* ============================================
    SCROLL ANIMATIONS
    ============================================ */
-
 function initializeScrollAnimations() {
-    // Add fade-in animations to sections as they come into view
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -411,6 +409,7 @@ function initializeScrollAnimations() {
     }, { threshold: 0.1 });
 
     document.querySelectorAll('section').forEach(section => {
+        if (section.id === 'home') return;
         section.style.opacity = '0';
         observer.observe(section);
     });
